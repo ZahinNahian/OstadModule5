@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            background:linear-gradient(141deg, rgba(111,120,227,1) 17%, rgba(115,85,168,1) 66%);
+            justify-content: center;
+            align-items: center;
+        }
+        .labledesign {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:900;
+            margin-right: 5px;
+        }
+
+        .inputdesign {
+            font-family: 'Courier New', Courier, monospace;
+            width: 100%;
+            margin-left: 5px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .formdiv1 {
+            background-color: white;
+            padding: 80px;
+            border-radius: 15px;
+        }
+        .form1{
+            display:flex;
+            gap: 30px;
+        }
+
+        .firstcol{
+            width: 50%;
+        }
+
+        .secondcol {
+            width: 50%;
+        }
+
+        .indiblock{
+            display: flex; 
+            align-items: center; 
+            margin-top: 15px; 
+            margin-bottom: 15px;
+        }
+
+        .lingo {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .lingo label {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:900;
+        }
+
+        .lingodivs {
+            display: flex; 
+            align-items: center;
+        }
+
+        .lingotitle {
+            padding-right: 20px;
+        }
+
+        h1{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-top: 0px;
+        }
+
+        .bt1 {
+            background-color: rgb(196, 103, 72);
+            padding: 6px;
+            border: none;
+            border-radius: 5px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            font-size: medium;
+            margin-right: 10px;
+        }
+
+        .bt2 {
+            background: linear-gradient(141deg, rgba(111,120,227,1) 17%, rgba(115,85,168,1) 66%);
+            padding: 6px;
+            border:none;
+            border-radius: 5px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+            font-size: medium;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="formdiv1">
+            <h1>REGISTER</h1>
+            <form action="">
+                <div class="form1">
+                    <div class="firstcol">
+                        <div class="indiblock">
+                            <label class="labledesign" for="fname">Full Name</label>
+                            <input class="inputdesign" type="text" name="fname" id="fname" placeholder="Enter your name"><br>
+                        </div>
+    
+                        <div class="indiblock">
+                            <label class="labledesign" for="Email">Email</label>
+                            <input class="inputdesign" type="email" name="Email" id="Email" placeholder="Enter your Email"><br>
+                        </div>
+    
+                        <div class="indiblock">
+                            <label class="labledesign" for="pass">Password</label>
+                            <input class="inputdesign" type="password" id="pass" placeholder="Enter your Password"><br>
+                        </div>
+    
+                        <div class="lingo">
+                            <label class="lingotitle" for="">Gender</label>
+                            <div class="lingodivs">
+                                <input style="margin-bottom: 3px;" type="radio" name="gender" id="Male" value="Male">
+                                <label for="Male">Male</label>
+                            </div>
+    
+                            <div class="lingodivs">
+                                <input style="margin-bottom: 3px;" type="radio" name="gender" id="Female" value="Female">
+                                <label for="Female">Female</label>
+                            </div>
+    
+                            <div class="lingodivs">
+                                <input style="margin-bottom: 3px;" type="radio" name="gender" id="Other" value="Other">
+                                <label for="Other">Others</label>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+                    <div class="seconddcol">
+                        <div class="indiblock">
+                            <label class="labledesign" for="username">Username</label>
+                            <input class="inputdesign" type="text" name="username" id="username" placeholder="Enter your username"><br>
+                        </div>
+    
+                        <div class="indiblock">
+                            <label class="labledesign" for="number">Phone Number</label>
+                            <input class="inputdesign" type="tel" name="number" id="number" placeholder="Enter your Phone number" pattern="[0-9]{11}"><br>
+                        </div>
+    
+                        <div class="indiblock">
+                            <label class="labledesign" for="cpass">Confirm Password</label>
+                            <input class="inputdesign" type="password" id="cpass" placeholder="Confirm Password"><br>
+                        </div>
+    
+                    </div>
+                </div>
+                <div>
+                    <button class="bt1" type="submit">Cancel</button>
+                    <button class="bt2" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
